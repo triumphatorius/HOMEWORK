@@ -4,7 +4,7 @@
 /* 1. Создайте переменную $str, которой присвойте строковое значение,
 содержащее отдельные слова разделенные пробелом. Выведите строку на
 экран. */
-$str = "Я делаю домашнее задание в рамках курса 'Комплексный курс по PHP'.";
+$str = 'Я делаю домашнее задание в рамках курса \'Комплексный курс по PHP\'.';
 echo $str;
 
 /*2. Затем разбейте строку на массив с помощью функции explode . Выведите
@@ -13,18 +13,15 @@ echo $str;
 Вывести результат.
 3. Пример. $str=”123 456”. В результате должно быть “456|123”, то есть выведено
 наоборот. */
-echo "<pre>";
-$str_arr = ( explode(' ',$str) );
-print_r ( $str_arr);
-echo "</pre>";
+echo '<pre>';
+$str_arr = (explode(' ', $str));
+print_r($str_arr);
+echo '</pre>';
 
 $length = count($str_arr);
 while ($length) {
-  $reversed_array[]=$str_arr[$length -1];
-      $length --;
+    $reversed_array[] = $str_arr[$length - 1];
+    $length--;
 }
-$str_reverse=implode('+',$reversed_array);
+$str_reverse = implode('+', $reversed_array);
 echo $str_reverse;
-/*while ( ){
-    echo ;
-}*/

@@ -5,11 +5,13 @@
         border: 1px solid black;
         border-collapse: collapse;
     }
+
     th {
         border: 1px solid #000;
         padding: 5px;
     }
-    td{
+
+    td {
         border: 1px solid #000;
         padding: 5px;
     }
@@ -28,25 +30,25 @@
 
 $rows = 10;// количество строк, tr
 $cols = 10;// количество столбцов, td
-echo "<table>";
+echo '<table>';
 for ($tr = 1; $tr <= 10; $tr++) { //счётчик $tr
 
     for ($th = 1; $th <= 10; $th++) { //счётчик $th
-        echo "<th>";
-        $res=$tr * $th;
+        echo '<th>';
+        $res = $tr * $th;
 
-        if($res%2 == 0){ //условие чётные или нечётные
+        if ($res % 2 === 0) { //условие чётные или нечётные
             echo "($res)";
-        }elseif($res%2 != 0){
+        } elseif ($res % 2 != 0) {
             echo "[$res]";
-        }else{
+        } else {
             echo $res;
         }
 
-        echo "</th>";
+        echo '</th>';
     }
 
-    echo "</tr>";
+    echo '</tr>';
 }
-echo "</table>";
+echo '</table>';
 
