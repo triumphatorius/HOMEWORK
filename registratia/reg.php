@@ -52,24 +52,62 @@
     <div class="container">
 
       <div class="form-container">
-        <form class="form-horizontal" action="">
+        <form enctype="multipart/form-data" class="form-horizontal" action="" method="post">
+
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Логин</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputEmail3" placeholder="Логин">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Логин" name="login">
             </div>
           </div>
+
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль" name="password">
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="inputPassword4" class="col-sm-2 control-label">Пароль (Повтор)</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Пароль" name="password_confirm">
+            </div>
+          </div>
+
+            <div class="form-group">
+                <label for="inputName" class="col-sm-2 control-label">Имя</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="Имя" name="firstname">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputAge" class="col-sm-2 control-label">Возраст</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputAge" placeholder="Возраст" name="age">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputDescription" class="col-sm-2 control-label">Описание</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputDescription" placeholder="Описание" name="description">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPhoto" class="col-sm-2 control-label">Фото</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" id="inputPhoto"  name="photo_name">
+                </div>
+            </div>
+
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Войти</button>
+              <button type="submit" class="btn btn-default">Зарегистрироваться</button>
               <br><br>
-              Нет аккаунта? <a href="reg.php">Зарегистрируйтесь</a>
+              Зарегистрированы? <a href="index.php">Авторизируйтесь</a>
             </div>
           </div>
         </form>
