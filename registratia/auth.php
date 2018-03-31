@@ -24,5 +24,5 @@ $age = $_POST['age'];
 $description = $_POST['description'];
 $photo_name = $_POST['photo_name'];
 
-var_dump($stmt);
-//$stmt->execute();
+//var_dump($stmt);
+$stmt->execute();
