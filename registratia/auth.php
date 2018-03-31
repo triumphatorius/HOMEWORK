@@ -13,7 +13,6 @@ $stmt->bindParam(':password', $password);
 //Пишем данные ввода из формы в переменные
 $login= $_POST['login'];
 $password = $_POST['password'];
-$password = $_POST['password_confirm'];
 $password_confirm = $_POST['password_confirm'];
 $name = $_POST['name'];
 $age = $_POST['age'];
