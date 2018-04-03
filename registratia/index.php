@@ -41,9 +41,9 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Авторизация</a></li>
-            <li><a href="reg.php">Регистрация</a></li>
-            <li><a href="list.php">Список пользователей</a></li>
-            <li><a href="filelist.php">Список файлов</a></li>
+            <li><a href="public/reg.php">Регистрация</a></li>
+            <li><a href="public/list.php">Список пользователей</a></li>
+            <li><a href="public/filelist.php">Список файлов</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

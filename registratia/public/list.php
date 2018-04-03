@@ -11,11 +11,11 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="templates/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../templates/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
-    <link href="templates/starter-template.css" rel="stylesheet">
+    <link href="../templates/starter-template.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,7 +40,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Авторизация</a></li>
+            <li class="active"><a href="../index.php">Авторизация</a></li>
             <li><a href="reg.php">Регистрация</a></li>
             <li><a href="list.php">Список пользователей</a></li>
             <li><a href="filelist.php">Список файлов</a></li>
@@ -51,18 +51,24 @@
 
     <div class="container">
     <h1>Запретная зона, доступ только авторизированному пользователю</h1>
-      <h2>Информация выводится из списка файлов</h2>
+      <h2>Информация выводится из базы данных</h2>
       <table class="table table-bordered">
         <tr>
-          <th>Название файла</th>
+          <th>Пользователь(логин)</th>
+          <th>Имя</th>
+          <th>возраст</th>
+          <th>описание</th>
           <th>Фотография</th>
           <th>Действия</th>
         </tr>
         <tr>
-          <td>1.jpg</td>
+          <td>vasya99</td>
+          <td>Вася</td>
+          <td>14</td>
+          <td>Эксперт в спорах в интернете</td>
           <td><img src="http://lorempixel.com/people/200/200/" alt=""></td>
           <td>
-            <a href="">Удалить аватарку пользователя</a>
+            <a href="">Удалить пользователя</a>
           </td>
         </tr>
       </table>
@@ -74,8 +80,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="templates/js/main.js"></script>
-    <script src="templates/js/bootstrap.min.js"></script>
+    <script src="../templates/js/main.js"></script>
+    <script src="../templates/js/bootstrap.min.js"></script>
 
   </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+require '../registration.php';
+require '../photo-upload.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,14 +15,18 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="templates/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../templates/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
-    <link href="templates/starter-template.css" rel="stylesheet">
+    <link href="../templates/starter-template.css" rel="stylesheet">
+
+      <!-- my styles  -->
+      <link href="../templates/css/my.css" rel="stylesheet">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,7 +48,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Авторизация</a></li>
+            <li class="active"><a href="../index.php">Авторизация</a></li>
             <li><a href="reg.php">Регистрация</a></li>
             <li><a href="list.php">Список пользователей</a></li>
             <li><a href="filelist.php">Список файлов</a></li>
@@ -55,21 +63,21 @@
         <form enctype="multipart/form-data" class="form-horizontal" action="" method="post">
 
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Логин</label>
+            <label for="login" class="col-sm-2 control-label">Логин</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputEmail3" placeholder="Логин" name="login">
+              <input type="text" class="form-control" id="inputLogin" placeholder="Логин" name="login">
             </div>
           </div>
 
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
+            <label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
               <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль" name="password">
             </div>
           </div>
 
           <div class="form-group">
-            <label for="inputPassword4" class="col-sm-2 control-label">Пароль (Повтор)</label>
+            <label for="inputPassword" class="col-sm-2 control-label">Пароль (Повтор)</label>
             <div class="col-sm-10">
               <input type="password" class="form-control" id="inputPassword4" placeholder="Пароль" name="password_confirm">
             </div>
@@ -99,7 +107,8 @@
             <div class="form-group">
                 <label for="inputPhoto" class="col-sm-2 control-label">Фото</label>
                 <div class="col-sm-10">
-                    <input type="file" class="form-control" id="inputPhoto"  name="photo_name">
+                    <input type="file" class="form-control" id="inputPhoto"  name="photo">
+                    <abbr class="my-color">Внимание только формат: bmp, gif, jpg, png, svg.</abbr>
                 </div>
             </div>
 
@@ -120,8 +129,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="templates/js/main.js"></script>
-    <script src="templates/js/bootstrap.min.js"></script>
+    <script src="../templates/js/main.js"></script>
+    <script src="../templates/js/bootstrap.min.js"></script>
 
   </body>
 </html>
