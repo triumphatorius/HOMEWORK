@@ -1,14 +1,18 @@
 <?php
-
 session_start();
 
-if(!$_SESSION['login']){
+if($_SESSION['auth'] !== true)
+{
     echo 'Неправильный логин или пароль';
-    //header('Location: на страницу с авторизацией');
-    die();
 }
+/*if(!empty($_SESSION['login']) && !empty($_SESSION['password'])){
+    echo 'Неправильный логин или пароль';
+//header('Location: на страницу с авторизацией');
+    die();
+}*/
 
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -20,6 +24,6 @@ if(!$_SESSION['login']){
     <title>Document</title>
 </head>
 <body>
-<h1>Если ты авторизован ты меня читаешь</h1>
+<h1>Если ты авторизован то ты меня читаешь</h1>
 </body>
 </html>

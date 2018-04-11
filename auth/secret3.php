@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(!$_SESSION['login']) {
+if(empty($_SESSION['login']) && empty($_SESSION['password'])){
     echo 'Неправильный логин или пароль';
 //header('Location: на страницу с авторизацией');
     die();
