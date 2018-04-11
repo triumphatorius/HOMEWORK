@@ -6,8 +6,8 @@ require 'auth.php';
 
 <!-- Это форма авторизации: -->
 <form action='index.php' method='POST'>
-    <input name='login'>
-    <input name='password' type='password'>
+    <input type='text' name='login'>
+    <input type='password' name='password' >
     <input type='submit' value='Отправить'>
 </form>
 <!-- Конец формы авторизации. -->
